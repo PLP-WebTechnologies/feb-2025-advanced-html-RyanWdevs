@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Gallery - Wine Enthusiast Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #800000;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        h2 {
+            color: #800000;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        section {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #800000;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #800000;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Header -->
+    <header>
+        <h1>Welcome to Wine Gallery</h1>
+        <p>A Wine Enthusiast Platform for Wine Lovers</p>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Favorite Wine Types To Taste</h2>
+        <ol type="I">
+            <li>Red Wine</li>
+            <li>White Wine</li>
+            <li>Rose Wine</li>
+            <li>Sparkling Wine</li>
+            <li>Dessert Wine</li>
+        </ol>
+    </section>
+
+    <!-- External Image of Wine Grapes from Pexels -->
+    <section>
+        <h2>Explore Our Wine Tasting Community</h2>
+        <img src="https://images.pexels.com/photos/39351/purple-grapes-vineyard-napa-valley-napa-vineyard-39351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Wine Grapes">
+    </section>
+
+    <!-- Table of Wine Gallery Branches -->
+    <section>
+        <h2>Wine Gallery Branches</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Branch</th>
+                    <th>Contact</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nairobi</td>
+                    <td>+254 712 345678</td>
+                    <td>nairobi@winegallery.com</td>
+                </tr>
+                <tr>
+                    <td>Naivasha</td>
+                    <td>+254 700 654321</td>
+                    <td>naivasha@winegallery.com</td>
+                </tr>
+                <tr>
+                    <td>Kisumu</td>
+                    <td>+254 700 789012</td>
+                    <td>kisumu@winegallery.com</td>
+                </tr>
+                <tr>
+                    <td>Mombasa</td>
+                    <td>+254 700 234567</td>
+                    <td>mombasa@winegallery.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <!-- Name Input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <!-- Password Input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+            <!-- Date Input -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <!-- Dropdown for Gender -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <!-- Radio Buttons for Subscription -->
+            <label>Subscription:</label><br>
+            <input type="radio" id="subscribe_yes" name="subscribe" value="yes" required>
+            <label for="subscribe_yes">Yes</label><br>
+            <input type="radio" id="subscribe_no" name="subscribe" value="no" required>
+            <label for="subscribe_no">No</label><br><br>
+
+            <!-- Wine Interests (Replaced Interests) -->
+            <label>Wine Interests:</label><br>
+            <input type="checkbox" id="interest_tastings" name="wine_interests" value="tastings">
+            <label for="interest_tastings">Tastings</label><br>
+            <input type="checkbox" id="interest_food_pairings" name="wine_interests" value="food_pairings">
+            <label for="interest_food_pairings">Food Pairings</label><br>
+            <input type="checkbox" id="interest_books_wine" name="wine_interests" value="books_wine">
+            <label for="interest_books_wine">Books & Wine</label><br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Multimedia: Audio and Video -->
+    <section>
+        <h2>Wine-Tasting Experience</h2>
+
+        <!-- Audio Element -->
+        <h3>Relaxing Wine Tasting Music</h3>
+        <audio controls>
+            <source src="https://freemusicarchive.org/search/?quicksearch=&search-genre=Jazz" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio><br><br>
+
+        <!-- Video Element -->
+        <h3>Wine Cellar Tour</h3>
+        <video width="320" height="240" controls>
+            <source src="https://example.com/wine_cellar_tour.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Wine Gallery. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
